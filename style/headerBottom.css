@@ -1,0 +1,56 @@
+
+
+
+
+.header__bottom{
+    padding-top: 220px;
+    padding-bottom: 250px;
+    padding-left: 15%;
+}
+
+.header__bottomBlock{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__bottomTitle{
+    font-size: 120px;
+    letter-spacing: 0.5px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.723;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+
+.header__bottomText{
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.header__bottomShop{
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    border-radius: 21px;
+    background-color: rgb(57, 84, 217);
+    padding: 20px 25px;
+    width: fit-content;
+    transition-duration: .2s;
+}
+
+.header__bottomShop:hover{
+    background-color: rgb(57, 166, 217);
+    transition-duration: .2s;
+}
+
+

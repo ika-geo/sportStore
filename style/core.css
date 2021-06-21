@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+a, img{
+    display: block;
+}
+
+
+.wrapper{
+    max-width: 1200px;
+    width: 1200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: -75px auto;
+}
+
+
+
+.content{
+    margin-top: -50px;
+    margin-bottom: -50px;
+    box-shadow: 0 0 20px 0 black;
+    background-color: white;
+}
