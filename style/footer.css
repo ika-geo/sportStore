@@ -18,6 +18,7 @@ footer{
 .footer__top{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 
