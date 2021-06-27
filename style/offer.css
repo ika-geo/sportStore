@@ -6,8 +6,23 @@
     background-color: #f2f0f0;
 }
 
-.offer__rightBlock{
+
+
+
+.offer__rightBlock, .offer__leftBlock{
     width: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .offer{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .offer__rightBlock, .offer__leftBlock{
+        width: 100%;
+    }
 }
 
 .offer__rightBlock img{
@@ -15,8 +30,8 @@
 }
 
 
+
 .offer__leftBlock{
-    width: 50%;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -43,6 +58,11 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 425px){
+    .offer__title{
+        font-size: 35px;
+    }
+}
 
 .offer__text{
     font-size: 18px;
@@ -67,6 +87,12 @@
     margin-right: 55px;
 }
 
+@media screen and (max-width: 425px){
+    .offer__newPrice{
+        font-size: 30px;
+    }
+}
+
 .offer__oldPrice{
     font-size: 25px;
     font-family: "Montserrat";
@@ -74,6 +100,11 @@
     text-decoration: line-through;
 }
 
+@media screen and (max-width: 425px){
+    .offer__oldPrice{
+        font-size: 22px;
+    }
+}
 
 .offer__timer{
     display: flex;
@@ -89,6 +120,14 @@
     margin: 0 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 425px){
+    .offer__hours, .offer__minutes, .offer__seconds{
+        width: 85px;
+        margin: 0 4px;
+    }
+}
+
 
 .hour, .minute, .second {
     font-size: 24px;
@@ -107,6 +146,11 @@
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 425px){
+    .offer__hoursText, .offer__minutesText, .offer__secondsText{
+        font-size: 12px;
+    }
+}
 
 
 .offer__shop {

@@ -1,17 +1,16 @@
 
-.shop{
+.shop__block{
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
-    border-top: 1px solid grey;
 }
 
 
-
-.shop > div{
+.shopItem, .shopBanner{
     width: 25%;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0 1px 1px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -19,11 +18,17 @@
 }
 
 
-.shop>div:nth-child(4), .shop>div:nth-child(7), .shop>div:nth-child(11){
-    border-right: unset;
+@media screen and (max-width: 768px){
+    .shopItem, .shopBanner{
+        width: 50%;
+    }
 }
 
-
+@media screen and (max-width: 425px){
+    .shopItem, .shopBanner{
+        width: 100%;
+    }
+}
 
 .shopItem{
     position: relative;
@@ -34,8 +39,16 @@
     width: 50%!important;
 }
 
+
+@media screen and (max-width: 768px){
+    .shopDoubleBanner{
+        width: 100%!important;
+    }
+}
+
 .shopItem img{
     max-height: 150px;
+    max-width: 100%;
     align-self: center;
     margin-bottom: 20px;
 }
@@ -45,11 +58,13 @@
     color: rgb(13, 46, 87);
     text-transform: uppercase;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .shopItem__prices{
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 
@@ -81,8 +96,18 @@
     z-index: 50;
 }
 
+
 .shopItem:hover .shopItem__buyBlock {
     display: unset;
+}
+
+
+@media screen and (max-width: 768px){
+    .shopItem__buyBlock {
+        display: unset;
+        position: unset;
+        background-color: unset;
+    }
 }
 
 
@@ -96,8 +121,20 @@
     background-color: #65cbff;
     color: white;
     z-index: 100;
-
 }
+
+
+@media screen and (max-width: 768px){
+    .shopItem__buy{
+        font-size: 15px;
+        position: unset;
+        padding: 10px 15px;
+        transform: unset;
+        width: fit-content;
+        margin: 10px auto 0;
+    }
+}
+
 
 
 
@@ -105,16 +142,34 @@
 
 .shopBanner{
     background-color: #000;
-    padding-top:  40px;
-    padding-left: 40px;
+    height: 400px;
+    max-height: 400px;
 }
 
 .shopDoubleBanner{
     background: url("../img/shop/shopBG.png") left top no-repeat;
+    background-position-x: right;
     background-size: cover;
-    padding-top:  40px;
-    padding-left: 40px;
+    height: 400px;
+    max-height: 400px;
 }
+
+@media screen and (max-width: 768px){
+    .shopDoubleBanner{
+        background: linear-gradient(to left, #000000, #551e21);
+    }
+
+    .shopDoubleBanner{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .shopDoubleBanner, .shopBanner{
+        height: fit-content;
+    }
+}
+
 
 .shopBanner__title{
     font-size: 32px;
@@ -124,11 +179,35 @@
     margin-bottom: 15px;
 }
 
+
+
+
 .shopBanner__text{
     font-size: 18px;
     color: rgb(255, 255, 255);
     letter-spacing: 5px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .shopBanner__text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .shopBanner__text{
+        font-size: 12px;
+    }
+}
+
+
+.shopBanner__click{
+    background-color: #65cbff;
+    color: white;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 
 
@@ -141,4 +220,12 @@
     color: rgb(55, 83, 218);
     font-weight: bold;
     text-transform: uppercase;
+    transition-duration: .3s;
 }
+
+.shop_click:hover{
+    color: #65cbff;
+    transition-duration: .3s;
+}
+
+

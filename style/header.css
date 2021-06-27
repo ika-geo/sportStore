@@ -5,6 +5,7 @@ header{
 }
 
 
+
 .header__top{
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,15 @@ header{
 }
 
 
+@media screen and (max-width: 768px){
+    .header__logo h1 {
+        border-right: unset;
+    }
+}
+
+
+
+
 
 .header__logo h1 a{
     font-size: 25px;
@@ -38,7 +48,6 @@ header{
     text-transform: uppercase;
     font-weight: 900;
 }
-
 
 .header__menu a {
     font-size: 15px;
@@ -61,7 +70,7 @@ header{
 }
 
 .header__menu li{
-    margin: 5px 25px 5px 0;
+    margin: 5px 22px 5px 0;
 }
 
 
@@ -126,6 +135,12 @@ header{
 .header__cart, .header__search{
     margin-left: 40px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 425px){
+    .header__cart{
+        margin-left: 0;
+    }
 }
 
 .header__cart i, .header__search i{

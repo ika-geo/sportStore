@@ -1,16 +1,18 @@
 
 
 
+// burgermenu
+
+let $BurgerMenuBTN=document.querySelector(".BurgerMenuBTN")
+let $header__BurgerMenu = document.querySelector(".header__BurgerMenu")
 
 
+$BurgerMenuBTN.addEventListener("click", function (){
+    console.log(45)
+    $BurgerMenuBTN.classList.toggle("active")
+    $header__BurgerMenu.classList.toggle("active")
 
-
-
-
-
-
-
-
+})
 
 
 
@@ -53,3 +55,15 @@ setInterval(function (){
         return
     }
 }, 1000)
+
+
+
+// footer menu open/close
+
+let $footerTitle = document.querySelectorAll(".footer__topTitle")
+
+$footerTitle.forEach(a=>{
+    a.addEventListener("click", function (){
+        a.parentElement.classList.toggle("active")
+    })
+})

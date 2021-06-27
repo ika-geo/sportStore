@@ -1,0 +1,121 @@
+footer{
+    position: relative;
+    z-index: 100;
+    background: url("../img/footerBG.png");
+    padding-top: 220px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        padding-top: 50px;
+
+    }
+}
+
+
+.footer__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+
+@media screen and (max-width: 425px){
+    .footer__left{
+        width: 100%;
+    }
+}
+
+
+.footer__left nav{
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 425px){
+    .footer__left nav{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .footer__left nav{
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.footer__topTitle{
+    position: relative;
+    font-size: 21px;
+    font-family: "Poppins";
+    color: rgb(55, 83, 218);
+    text-transform: uppercase;
+    margin-bottom: 29px;
+}
+
+
+
+@media screen and (max-width: 425px){
+
+    .footer__topTitle, .footer__Menu a{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+    .footer__topTitle::after{
+        position: absolute;
+        content: "\2023";
+        font-size: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% + 5px);
+        transition-duration: .3s;
+    }
+}
+
+
+
+/*footer menu open/close*/
+
+@media screen and (max-width: 425px) {
+    
+    .footer__Menu{
+        display: none;
+    }
+
+    .footer__left nav.active .footer__topTitle::after{
+        transform: translateY(-50%) rotate(90deg);
+        transition-duration: .3s;
+    }
+
+    .footer__left nav.active .footer__Menu{
+        display: unset;
+    }
+
+}
+
+
+
+
+
+.footer__Menu a{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 3px;
+    font-weight: bold;
+    transition-duration: .2s;
+}
+
+.footer__Menu a:hover{
+    color: rgb(6, 247, 255);
+    transition-duration: .2s;
+}
