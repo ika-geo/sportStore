@@ -1,8 +1,8 @@
 .terms__block{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .terms__item{
@@ -15,7 +15,6 @@
 
 @media screen and (max-width: 600px){
     .terms__block{
-        padding-top: 30px;
         padding-bottom: 0;
     }
 
@@ -28,7 +27,7 @@
 
 
 .terms__img img{
-    height: 50px;
+    height: 60px;
     margin-bottom: 20px;
 }
 
