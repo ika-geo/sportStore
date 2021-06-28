@@ -1,0 +1,62 @@
+.terms__block{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.terms__item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .terms__block{
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .terms__item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+.terms__img img{
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.terms__title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Bebas Neue";
+    color: rgb(15, 73, 172);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.terms__text{
+    font-size: 15px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    flex-grow: 1;
+}
+
+
+.terms__link{
+    color: rgb(15, 73, 172);
+    transition-duration: .3s;
+}
+
+.terms__link:hover{
+    color: rgb(55, 194, 218);
+    transition-duration: .3s;
+}
