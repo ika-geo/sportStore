@@ -118,10 +118,17 @@
     transform: translateX(-50%);
     border-radius: 20px;
     padding: 10px 20px;
-    background-color: #65cbff;
+    background-color: rgb(57, 84, 217);
     color: white;
     z-index: 100;
+    transition-duration: .3s;
 }
+
+.shopItem__buy:hover{
+    background-color: rgb(57, 166, 217);
+    transition-duration: .3s;
+}
+
 
 
 @media screen and (max-width: 768px){

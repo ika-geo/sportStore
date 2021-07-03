@@ -1,7 +1,35 @@
 
+// fixed menu
 
 
-// burgermenu
+let $headerTop = document.querySelector(".header__top")
+
+window.addEventListener("scroll", function (){
+    if (window.scrollY>50&&window.innerWidth>768){
+        $headerTop.classList.add("fixed")
+    }
+    else {
+        $headerTop.classList.remove("fixed")
+    }
+})
+
+window.addEventListener("resize", function (){
+    if (window.innerWidth<=768){
+        $headerTop.classList.remove("fixed")
+    }
+
+    else {
+        $headerTop.classList.add("fixed")
+    }
+})
+
+
+
+
+
+
+
+// burgerMenu
 
 let $BurgerMenuBTN=document.querySelector(".BurgerMenuBTN")
 let $header__BurgerMenu = document.querySelector(".header__BurgerMenu")

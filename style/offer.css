@@ -161,5 +161,13 @@
     padding: 15px;
     background-color: rgb(57, 84, 217);
     border-radius: 20px;
+    transition-duration: .2s;
+}
+
+
+.offer__shop:hover{
+    background-color: rgb(57, 166, 217);
+    transition-duration: .2s;
+
 }
 
