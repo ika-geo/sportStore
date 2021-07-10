@@ -8,6 +8,11 @@
 }
 
 
+html{
+    scroll-padding-top: 50px;
+}
+
+
 a, img{
     display: block;
 }
