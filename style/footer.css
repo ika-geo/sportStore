@@ -88,6 +88,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
+        width: -moz-fit-content;
     }
 
     .footer__topTitle::after{
@@ -173,6 +174,7 @@ footer{
 @media screen and (max-width: 425px) {
     .footer__socialBlock{
         width: fit-content;
+        width: -moz-fit-content;
         margin-left: auto;
         margin-right: auto;
     }
@@ -208,12 +210,14 @@ footer{
     text-transform: uppercase;
     margin-bottom: 10px;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 
 @media screen and (max-width: 425px) {
     .footer__subscribeTitle{
         width: fit-content;
+        width: -moz-fit-content;
         margin-left: auto;
         margin-right: auto;
     }

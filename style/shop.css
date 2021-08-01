@@ -138,6 +138,7 @@
         padding: 10px 15px;
         transform: unset;
         width: fit-content;
+        width: -moz-fit-content;
         margin: 10px auto 0;
     }
 }
@@ -213,6 +214,7 @@
     background-color: #65cbff;
     color: white;
     width: fit-content;
+    width: -moz-fit-content;
     padding: 10px 15px;
     border-radius: 10px;
 }
@@ -221,6 +223,7 @@
 .shop_click{
     border: unset;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 30px auto;
     font-size: 15px;
     font-family: "Montserrat";

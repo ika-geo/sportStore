@@ -36,7 +36,6 @@ let $header__BurgerMenu = document.querySelector(".header__BurgerMenu")
 
 
 $BurgerMenuBTN.addEventListener("click", function (){
-    console.log(45)
     $BurgerMenuBTN.classList.toggle("active")
     $header__BurgerMenu.classList.toggle("active")
 
