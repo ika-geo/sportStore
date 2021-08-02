@@ -82,6 +82,7 @@
     background-color: rgb(57, 84, 217);
     padding: 20px 25px;
     width: fit-content;
+    width: -moz-fit-content;
     transition-duration: .2s;
 }
 
